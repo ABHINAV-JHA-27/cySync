@@ -3,7 +3,6 @@ import {
     Route,
     BrowserRouter as Router,
     Routes,
-    redirect,
 } from "react-router-dom";
 import styled from "styled-components";
 import Layout from "./container/Layout";
