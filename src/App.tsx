@@ -7,11 +7,14 @@ import {
 import styled from "styled-components";
 import Layout from "./container/Layout";
 import "./index.css";
+import WalletScreen from "./screen/wallet";
+import TransactionScreen from "./screen/transactions";
 
 const AppContainer = styled.div`
     flex: 1;
     height: 100vh;
     width: 100vw;
+    background-color: #0a1018;
 `;
 
 function App() {
@@ -24,8 +27,11 @@ function App() {
                             path="/"
                             element={<Navigate to="/wallets" replace={true} />}
                         />
-                        <Route path="/wallets" element={<h1>heelo</h1>} />
-                        <Route path="/transactions" element={<h1>hii</h1>} />
+                        <Route path="/wallets" element={<WalletScreen />} />
+                        <Route
+                            path="/transactions"
+                            element={<TransactionScreen />}
+                        />
                     </Routes>
                 </Layout>
             </Router>

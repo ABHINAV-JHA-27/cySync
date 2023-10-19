@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import RefreshIconPng from "../../assets/images/RefreshIcon.png";
+import RefreshIconPng from "../../assets/images/RefreshIconPng.png";
 
 const NavContainer = styled.div`
     height: 10%;
